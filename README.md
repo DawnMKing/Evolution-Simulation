@@ -13,12 +13,18 @@ Outline of simulation files.
   Set intial mutation values for each individual in the initial population
 #Generations.m
   Main generation Loop. Ouputs generational population size, each individuals x-and y-coordinates, each individuals parents, clustering seeds (who mated with whom), distances between mates, who was killed in each generation.  Functions in loop appear in this order: FindMates.m, MakeBabies.m, OverpopulationDeath.m, RandomDeath.m, CliffJumpers.m, AdjustLandscape.m.
-#FindMates.m, locates mates based off of choosen reproduction scheme (assortative mating, nearest-neighbor mates), random mates.
-#MakeBabies.m, diperse offspring depending on mutation parameter and reproduction scheme, same number of osspring for each parent if flat-fitness landscape, or different number of offspring for each parent if a varying fitness landscape
-#OverpopulationDeath.m, kills offspring if within a defined distance of one another
-#RandomDeath.m, kills random pernetage of ofspring either with either predefined percentage in each generation or upto a certain   percentage in each generation.
-#CliffJumpers.m, kills organisms if the fall off of the predefined landscape boundary
-#AjdustLandscape.m, change the fitness landscape (only if using a varying fitness landscape, will pass if on a flat fitness         landscape).
+#FindMates.m
+  Locates mates based off of choosen reproduction scheme (assortative mating, nearest-neighbor mates), random mates.
+#MakeBabies.m
+  Disperses offspring depending on mutation parameter and reproduction scheme, same number of osspring for each parent if flat-fitness landscape, or different number of offspring for each parent if a varying fitness landscape
+#OverpopulationDeath.m
+Kills offspring if within a defined distance of one another
+#RandomDeath.m
+Kills random pernetage of ofspring either with either predefined percentage in each generation or upto a certain   percentage in each generation.
+#CliffJumpers.m
+Kills organisms if the fall off of the predefined landscape boundary
+#AjdustLandscape.m
+Change the fitness landscape (only if using a varying fitness landscape, will pass if on a flat fitness         landscape).
     
   #Clustering.m
     Main clustering loop. It contains conditional functions build_cluster_seeds.m, build_clusters.m, locate clusters.m, depending on the generated data needed.
