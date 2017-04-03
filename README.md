@@ -24,8 +24,8 @@ Kills random pernetage of ofspring either with either predefined percentage in e
 #CliffJumpers.m
 Kills organisms if the fall off of the predefined landscape boundary
 #AjdustLandscape.m
-Change the fitness landscape (only if using a varying fitness landscape, will pass if on a flat fitness         landscape).
+Change the fitness landscape (only if using a varying fitness landscape, will pass if on a flat fitness landscape).
     
-  #Clustering.m
-    Main clustering loop. It contains conditional functions build_cluster_seeds.m, build_clusters.m, locate clusters.m, depending on the generated data needed.
+#Clustering.m
+Main clustering loop. It contains conditional functions build_cluster_seeds.m, build_clusters.m, locate clusters.m, depending on the generated data needed.
   
