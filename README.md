@@ -1,4 +1,7 @@
 # Evolution-Simulation
+
+Supporting simulation code files for publication in Royal Society Open Science
+
 Agent-based Evolution Simulation Overview
   These files contain all the necessary code to run an evolution simulation. The simulation starts with an intial population distribution on a 2D landscape (that is the size of your choice i.e. 25X25 arbitrary units). Digital organisms can either sexually or asexually reproduce based off the choosen simulation reproduction scheme. Offspring are generated and they diffuse on the space depending on the condition of mutation parameter. Each generation is then subjected to a series of death processes before the next generation can reproduce. The simulation saves a variety of data (discussed in more detail below) that can later be analysized. The simulation outputs large data sets that requires data management, thus the simulation also contains custom-written code to tag and organize data files that are based on the particlular parameter of the simulation. The analysis code uses the tagging system to locate and identify particular data. 
 
